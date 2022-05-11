@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+</head>
+<body>
+    
+    <form action="{% url 'saludo2' %}" method="post">
+        {% csrf_token %}
+        <p>Emisor
+            <input type="text" name="remitente">
+        </p>  
+        <p>Receptor<input type="text" name = "receptor"></p>
+        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+        <input type="submit">
+
+    </form>
+
+    
+</body>
+</html>
